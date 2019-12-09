@@ -3,7 +3,7 @@ class Dog
 
   def initialize(attributes_hash)
     attributes_hash.each do |key, value|
-      self.send(("#{key=}"), value)
+      self.send(("#{key}="), value)
     end
     self.id ||= nil
   end
